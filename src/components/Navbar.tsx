@@ -61,13 +61,22 @@ const MobileNavigation = () => {
           <h1 className="text-4xl font-bold">MENU</h1>
         </div>
         <ul className="flex flex-col justify-start">
-          <li className="text-center text-2xl font-medium py-6">Admissions</li>
+          <li className="text-center text-2xl font-medium py-6">
+            <Link href="/about">About</Link>
+          </li>
+          <li className="text-center text-2xl font-medium py-6">
+            <Link href="/admissions">Admissions</Link>
+          </li>
           <li className="text-center text-2xl font-medium py-6">Academics</li>
           <li className="text-center text-2xl font-medium py-6">
-            Student Life
+            <Link href="/student-life">Student Life</Link>
           </li>
-          <li className="text-center text-2xl font-medium py-6">People</li>
-          <li className="text-center text-2xl font-medium py-6">Courses</li>
+          <li className="text-center text-2xl font-medium py-6">
+            <Link href="/people">People</Link>
+          </li>
+          <li className="text-center text-2xl font-medium py-6">
+            <Link href="/courses">Courses</Link>
+          </li>
         </ul>
       </div>
     </>

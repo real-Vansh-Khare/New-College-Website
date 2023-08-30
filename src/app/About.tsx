@@ -1,7 +1,7 @@
 import H1 from '../components/Heading'
 export default function About() {
     return(
-        <div className="relative h-[90vh] m-10 max-md:m-5">
+        <div className="relative h-[90vh] m-10 max-md:m-5 scrollAnim">
             <div className="w-[25%] h-[10%] max-sm:w-[40%] bg-white sm:text-center">
                 <H1>About Us</H1>
             </div>

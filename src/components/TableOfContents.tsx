@@ -8,7 +8,7 @@ type Props= {
 
 type Heading = {
   id: string,
-  text: string
+  text: string | null
 }
 export default function TableOfContents({ children }:Props) {
   const [headings, setHeadings] = useState<Heading[]>([]);
@@ -17,7 +17,7 @@ export default function TableOfContents({ children }:Props) {
     const elements = Array.from(document.querySelectorAll("h2")).map(
       (elem) => ({
         id: elem.id,
-        text: elem.innerText,
+        text: elem.textContent,
       })
     );
     setHeadings(elements);

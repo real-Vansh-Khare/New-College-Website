@@ -3,7 +3,7 @@ import "../styles/clubs.css"
 const Clubs = () => {
     let nums1 = [1,2,3,4]
   return (
-    <div className='clubCont'>
+    <div className='clubCont scrollAnim'>
       <h1>Life at IIIT - Lucknow</h1>
       <center>
         <div className="clubCardContTop">

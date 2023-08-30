@@ -3,7 +3,7 @@ import "../styles/news.css"
 
 const News = () => {
   return (
-    <div className='News'>
+    <div className='News scrollAnim'>
       <h1>IIIT - L in the News</h1>
       <div className="newCont">
         <div className="leftBox"></div>

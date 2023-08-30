@@ -3,7 +3,7 @@ import "../styles/incubation.css"
 
 const Incubation = () => {
     return (
-        <div className='incCont'>
+        <div className='incCont scrollAnim'>
             <h1>Incubation Centre - IIIT, Lucknow</h1>
             <div className="main">
                 <div className='leftMain'>
