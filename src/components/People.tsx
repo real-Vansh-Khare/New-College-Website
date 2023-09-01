@@ -5,12 +5,11 @@ const People = () => {
     let nums = [1,2,3,4,5]
     return (
         <>
-        <Navbar />
         <div className='peopleCont'>
-            <h1>People</h1>
+            <h1 className='text-3xl'>People</h1>
             <div className="container">
                 <div>
-                    <h2>Co-ordinators</h2>
+                    <h2 className='text-xl'>Co-ordinators</h2>
                     <div className="circleCont">
                         <div className="circle"></div>
                         <div className="circle"></div>
@@ -18,7 +17,7 @@ const People = () => {
                 </div>
 
                 <div className="personCont">
-                    <h2>Executives</h2>
+                    <h2 className='text-xl'>Executives</h2>
                     {
                         nums.map((item,index)=>{
                         return(

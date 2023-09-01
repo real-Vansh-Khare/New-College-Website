@@ -1,9 +1,13 @@
 import Link from "next/link";
 
+
+
 const Logo = () => {
   return (
     <div className="row-span-2 col-span-1">
-      <img src="Logo Minimal 1.png"></img>
+      <Link href="/">
+      <img src="/Logo Minimal 1.png"></img>
+      </Link>
     </div>
   );
 };

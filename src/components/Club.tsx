@@ -1,5 +1,5 @@
-import Heading from "../components/Heading";
-import Navbar from "../components/Navbar";
+import Heading from "./Heading";
+import Navbar from "./Navbar";
 
 const Content = () => {
     return(
@@ -8,7 +8,7 @@ const Content = () => {
                 <p>Indian Institute of Information Technology, Lucknow (IIIT Lucknow) is one of the 20 IIITs being set up by the Central Government in Public Private Partnership (PPP) mode.</p>
                 <p>IIIT Lucknow currently offers all the amenities, academic and non-academic to its students that can help them flourish and serve the nation with all their apprehension in the various fields of technology. The admission is made through central counselling of candidates who qualify in JEE (Mains).</p>
             </div>
-            <div className="w-1/2 max-md:w-full h-[80vh] bg-gray-300"></div>
+            <div className="w-1/2 max-md:w-full h-[80vh] bg-gray-300 mb-12"></div>
         </div>
     );
 }
@@ -18,7 +18,7 @@ export default function Club({name}:{name: string}) {
         <>
         <Navbar />
         <div className="min-h-[80vh] mt-[5vh] mx-[5vw]">
-            <Heading>{name}</Heading>
+            <Heading>About {name}</Heading>
             <Content />
         </div>
         </>

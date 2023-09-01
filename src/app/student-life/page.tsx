@@ -1,19 +1,24 @@
 import React from 'react'
 import "../../styles/clubs.css"
 import Navbar from '@/components/Navbar'
+import Link from 'next/link'
+import People from '@/components/People'
 const Clubs = () => {
     let nums1 = [1,2,3,4]
   return (
     <>
     <Navbar />
     <div className='clubCont'>
-      <h1>Life at IIIT - Lucknow</h1>
+      <h1 className='text-3xl'>Life at IIIT - Lucknow</h1>
       <center>
         <div className="clubCardContTop">
             {
-                nums1.map((item)=>{
+                nums1.map((i,item)=>{
+                    const link = `clubs/club${i}`
                     return(
-                        <div className="clubCardTop"></div>
+                            <div className="clubCardTop flex">
+                                <Link href={link} className="w-full h-full"></Link>
+                            </div>
                     )
                 })
             }
@@ -42,6 +47,7 @@ const Clubs = () => {
         </div>
       </center>
     </div>
+    <People />
     </>
   )
 }
